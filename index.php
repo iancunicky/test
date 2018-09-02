@@ -5,12 +5,17 @@
 		<title>New one yeah!</title>
 	</head>
 	<body>
-		<?php $player = new Player('Bas', 'Beekhuis', 32);
-		echo $player->first_name;
-		echo $player->last_name;
-		echo $player->age;
 
-		?>
+
+	<?php $player = new Player('Bas', 'Beekhuis', 32);?>
+	<?php $player2 = new Player('Leon', 'Magerl', 31);?>
+	<p>Player name: <?php echo $player->first_name; ?>
+	<?php 	echo $player->last_name; ?></p>
+	<p>Age:<?php 	echo $player->age; ?></p>
+	<p>Player name: <?php echo $player2->first_name; ?>
+	<?php 	echo $player2->last_name; ?></p>
+	<p>Age:<?php 	echo $player2->age; ?></p>
+
 
 	</body>
 </html>
