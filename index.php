@@ -6,8 +6,8 @@
 	</head>
 	<body>
 	<?php $manager	= new Manager('Agentu007');
-				$team 		= new Team('Bagabontzii');
-				var_dump($team);
+
+
 				var_dump($manager);
 	?>
 
@@ -16,7 +16,10 @@
 
 
 
-	<p>Team name: <?php echo $team->team_name; ?>
+	<p>Team name: <?php $team = Team::team_name('Bagabontzii');
+	var_dump($team);
+
+	?>
 	<p>Player name: <?php echo $player->first_name; ?>
 	<?php 	echo $player->last_name; ?></p>
 	<p>Age:<?php 	echo $player->age; ?></p>
