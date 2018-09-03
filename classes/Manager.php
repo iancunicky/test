@@ -5,7 +5,7 @@ class Manager{
 
 
   public function manager($managers){
-    this->manager = $amnagers;
+    $this->manager = $managers;
   }
 }
 
