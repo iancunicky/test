@@ -5,6 +5,8 @@
 		<title>New one yeah!</title>
 	</head>
 	<body>
+			<?php $manager = new Manager();
 
+			?>
 	</body>
 </html>
