@@ -5,10 +5,8 @@
 		<title>New one yeah!</title>
 	</head>
 	<body>
-	<?php $manager	= new Manager('Agentu007');
+	<?php $manager1 = new Manager('Agentu007');
 
-
-				var_dump($manager);
 	?>
 
 	<?php $player = new Player('Bas', 'Beekhuis', 32);?>
@@ -16,10 +14,10 @@
 
 
 
-	<p>Team name: <?php $team = Team::team_name('Bagabontzii');
-	var_dump($team);
-
-	?>
+	<h2>Team name: <?php $team1 = new Team('Bagabontzii');
+	echo $team1->team_name;
+	?> ownned by: <?php echo $manager1->manager;  ?></h2>
+	<h3>Players List:</h3>
 	<p>Player name: <?php echo $player->first_name; ?>
 	<?php 	echo $player->last_name; ?></p>
 	<p>Age:<?php 	echo $player->age; ?></p>

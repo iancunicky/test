@@ -4,9 +4,11 @@ class Manager{
   public $manager;
 
 
-  public function manager($managers){
+  public function __construct($managers){
     $this->manager = $managers;
   }
+
+
 }
 
 ?>
